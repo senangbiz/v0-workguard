@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { label: "Product", href: "#" },
-  { label: "Solutions", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Docs", href: "#" },
+  { label: "Product", href: "/product" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Docs", href: "/docs" },
   { label: "Blog", href: "#" },
 ]
 
@@ -43,7 +43,7 @@ export function Navbar() {
         <div className="container mx-auto px-6 lg:px-12">
           <nav className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2">
+            <a href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
                 <span className="text-lg font-bold text-primary-foreground">W</span>
               </div>
