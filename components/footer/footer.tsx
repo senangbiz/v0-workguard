@@ -19,7 +19,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-background pt-20 pb-8">
+    <footer className="bg-primary text-primary-foreground pt-20 pb-8">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Main footer content */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 mb-16">
@@ -33,15 +33,13 @@ export function Footer() {
             >
               {/* Logo */}
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-teal flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-5 h-5 text-foreground" fill="currentColor">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                  </svg>
+                <div className="w-8 h-8 rounded-lg bg-primary-foreground flex items-center justify-center">
+                  <span className="text-lg font-bold text-primary">W</span>
                 </div>
-                <span className="text-xl font-bold">DataFlow</span>
+                <span className="text-xl font-bold">WorkGuard</span>
               </div>
-              <p className="text-background/60 text-sm leading-relaxed mb-6 max-w-xs">
-                Build, deploy, and scale your data infrastructure with confidence.
+              <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6 max-w-xs">
+                AI-powered workforce compliance management for foreign workers in Malaysia.
               </p>
               {/* Social links */}
               <div className="flex gap-4">
@@ -49,7 +47,7 @@ export function Footer() {
                   <a
                     key={social.label}
                     href={social.href}
-                    className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center text-background/60 hover:bg-background/20 hover:text-background transition-colors"
+                    className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/60 hover:bg-primary-foreground/20 hover:text-primary-foreground transition-colors"
                     aria-label={social.label}
                   >
                     <social.icon className="w-4 h-4" />
@@ -68,13 +66,13 @@ export function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <h4 className="font-semibold text-sm mb-4 text-background">{category}</h4>
+              <h4 className="font-semibold text-sm mb-4 text-primary-foreground">{category}</h4>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-sm text-background/60 hover:text-teal transition-colors"
+                      className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors"
                     >
                       {link}
                     </a>
@@ -86,19 +84,19 @@ export function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-background/10 pt-8">
+        <div className="border-t border-primary-foreground/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-background/50">
-              &copy; {new Date().getFullYear()} DataFlow. All rights reserved.
+            <p className="text-sm text-primary-foreground/50">
+              &copy; {new Date().getFullYear()} WorkGuard. All rights reserved.
             </p>
-            <div className="flex items-center gap-6 text-sm text-background/50">
-              <a href="#" className="hover:text-background transition-colors">
+            <div className="flex items-center gap-6 text-sm text-primary-foreground/50">
+              <a href="#" className="hover:text-primary-foreground transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-background transition-colors">
+              <a href="#" className="hover:text-primary-foreground transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="hover:text-background transition-colors">
+              <a href="#" className="hover:text-primary-foreground transition-colors">
                 Cookie Settings
               </a>
             </div>

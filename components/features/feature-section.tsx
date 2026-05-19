@@ -6,52 +6,52 @@ import { Zap, Shield, LineChart, Layers, Globe, Lock } from "lucide-react"
 
 const features = [
   {
-    icon: Zap,
-    title: "Real-time Processing",
-    description: "Process millions of events per second with sub-millisecond latency. Built for scale from day one.",
+    icon: Shield,
+    title: "Permit & Document Tracking",
+    description: "Automated PLKS, passport, and insurance expiry monitoring with instant alerts via email and WhatsApp.",
     color: "teal",
-    stat: "< 10ms",
-    statLabel: "avg latency"
+    stat: "24/7",
+    statLabel: "monitoring"
   },
   {
-    icon: Shield,
-    title: "Enterprise Security",
-    description: "SOC 2 Type II certified with end-to-end encryption. Your data stays protected at every layer.",
+    icon: Zap,
+    title: "AI Document OCR",
+    description: "Extract data from passports, ePass, and employment documents automatically with AI-powered MRZ recognition.",
     color: "coral",
-    stat: "SOC 2",
-    statLabel: "certified"
+    stat: "3s",
+    statLabel: "per document"
   },
   {
     icon: LineChart,
-    title: "Smart Analytics",
-    description: "ML-powered insights automatically surface patterns and anomalies in your data streams.",
+    title: "Compliance Dashboard",
+    description: "Real-time visibility into workforce compliance status, risk levels, and action recommendations.",
     color: "gold",
-    stat: "40%",
-    statLabel: "faster insights"
+    stat: "100%",
+    statLabel: "data accuracy"
   },
   {
     icon: Layers,
-    title: "Seamless Integrations",
-    description: "Connect to 200+ data sources with pre-built connectors. No complex ETL required.",
+    title: "Worker Management",
+    description: "Centralized worker profiles with biodata, passport info, PLKS details, and document uploads.",
     color: "teal",
-    stat: "200+",
-    statLabel: "integrations"
+    stat: "1,500+",
+    statLabel: "workers max"
   },
   {
     icon: Globe,
-    title: "Global Edge Network",
-    description: "Deploy to 40+ regions worldwide. Data processing happens closest to your users.",
+    title: "WhatsApp Integration",
+    description: "Send expiry reminders, compliance alerts, and notifications directly to WhatsApp with automated messaging.",
     color: "coral",
-    stat: "40+",
-    statLabel: "edge regions"
+    stat: "10K+",
+    statLabel: "msgs/month"
   },
   {
     icon: Lock,
-    title: "Access Control",
-    description: "Fine-grained permissions with SSO, RBAC, and audit logging. Complete visibility and control.",
+    title: "Access Control & Audit",
+    description: "Role-based permissions, activity logs, and complete audit trail for regulatory compliance and security.",
     color: "gold",
-    stat: "99.99%",
-    statLabel: "uptime SLA"
+    stat: "5",
+    statLabel: "user roles"
   },
 ]
 
@@ -132,12 +132,12 @@ export function FeatureSection() {
             Features
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            Everything you need to{" "}
-            <span className="text-teal">ship faster</span>
+            Manage Workforce{" "}
+            <span className="text-primary">Compliance Effortlessly</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            From real-time processing to enterprise security, we have got you covered 
-            with a complete data infrastructure platform.
+            Comprehensive tools to monitor permits, track documents, automate alerts, and maintain regulatory compliance 
+            for your foreign workforce.
           </p>
         </motion.div>
 

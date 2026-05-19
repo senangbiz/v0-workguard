@@ -16,11 +16,11 @@ export function CTASection() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.7 }}
-          className="relative rounded-3xl bg-foreground p-12 lg:p-20 overflow-hidden"
+          className="relative rounded-3xl bg-primary p-12 lg:p-20 overflow-hidden"
         >
           {/* Background decoration */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-teal/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-coral/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-primary-foreground/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary-foreground/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             {/* Badge */}
@@ -28,10 +28,10 @@ export function CTASection() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal/20 text-teal text-sm font-medium mb-8"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/20 text-primary-foreground text-sm font-medium mb-8"
             >
               <Sparkles className="w-4 h-4" />
-              Limited Time Offer
+              Start Your Free Trial
             </motion.div>
 
             {/* Headline */}
@@ -39,10 +39,10 @@ export function CTASection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-background mb-6 text-balance"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 text-balance"
             >
-              Ready to transform your{" "}
-              <span className="text-teal">data infrastructure</span>?
+              Take Control of Your{" "}
+              <span className="text-primary-foreground/90">Workforce Compliance</span>
             </motion.h2>
 
             {/* Description */}
@@ -50,10 +50,10 @@ export function CTASection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-lg text-background/70 mb-10 leading-relaxed"
+              className="text-lg text-primary-foreground/70 mb-10 leading-relaxed"
             >
-              Join thousands of teams who have already made the switch. 
-              Start with our free tier and scale as you grow.
+              Over 500 employers in Malaysia are already managing their workforce compliance with WorkGuard. 
+              Start your free trial and automate your compliance in minutes.
             </motion.p>
 
             {/* CTAs */}
@@ -65,17 +65,17 @@ export function CTASection() {
             >
               <Button 
                 size="lg" 
-                className="bg-teal text-foreground hover:bg-teal/90 group px-8"
+                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 group px-8"
               >
-                Get Started Free
+                Start Free Trial
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-background/30 text-background hover:bg-background/10 bg-transparent"
+                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
               >
-                Talk to Sales
+                Schedule Demo
               </Button>
             </motion.div>
 
@@ -84,11 +84,11 @@ export function CTASection() {
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: 0.7, duration: 0.6 }}
-              className="mt-12 flex flex-wrap items-center justify-center gap-6 text-background/50 text-sm"
+              className="mt-12 flex flex-wrap items-center justify-center gap-6 text-primary-foreground/50 text-sm"
             >
               <span>No credit card required</span>
               <span className="hidden sm:inline">•</span>
-              <span>14-day free trial</span>
+              <span>Full access included</span>
               <span className="hidden sm:inline">•</span>
               <span>Cancel anytime</span>
             </motion.div>

@@ -114,12 +114,12 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal/10 text-teal border border-teal/20 text-sm font-medium">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-teal" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
                 </span>
-                Now in Public Beta
+                AI-Powered Compliance
               </span>
             </motion.div>
 
@@ -131,27 +131,27 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 }}
             >
-              Build your data{" "}
+              Workforce{" "}
               <span className="relative inline-block">
                 {/* Gradient text with glow */}
                 <span
-                  className="relative z-10 bg-gradient-to-r from-teal to-cyan-400 bg-clip-text text-transparent"
+                  className="relative z-10 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent"
                   style={{
-                    textShadow: "0 0 40px hsl(174 62% 56% / 0.3)",
+                    textShadow: "0 0 40px hsl(220 26% 14% / 0.3)",
                   }}
                 >
-                  infrastructure
+                  Compliance
                 </span>
                 {/* Underline highlight */}
                 <motion.span
-                  className="absolute bottom-1 left-0 h-3 w-full bg-gradient-to-r from-teal/20 to-cyan-400/20 -z-0 rounded-sm"
+                  className="absolute bottom-1 left-0 h-3 w-full bg-gradient-to-r from-primary/20 to-primary/10 -z-0 rounded-sm"
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
                   style={{ originX: 0 }}
                 />
               </span>{" "}
-              with confidence
+              Made Simple
             </motion.h1>
 
             {/* Subheadline */}
@@ -161,8 +161,8 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Deploy real-time analytics pipelines in minutes. Scale effortlessly
-              with enterprise-grade security and seamless integrations.
+              AI-powered compliance management for foreign workforce. Automate
+              permit tracking, document verification, and regulatory compliance.
             </motion.p>
 
             {/* CTAs */}
@@ -174,9 +174,9 @@ export function HeroSection() {
             >
               <Button
                 size="lg"
-                className="bg-foreground text-background hover:bg-foreground/90 group px-8 shadow-lg shadow-foreground/10 transition-all hover:shadow-xl hover:shadow-foreground/15"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 group px-8 shadow-lg shadow-primary/10 transition-all hover:shadow-xl hover:shadow-primary/15"
               >
-                Start Building
+                Get Started Free
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button
@@ -215,8 +215,8 @@ export function HeroSection() {
                 ))}
               </div>
               <div className="text-sm text-muted-foreground">
-                <span className="font-semibold text-foreground">2,400+</span>{" "}
-                teams building
+                <span className="font-semibold text-foreground">500+</span>{" "}
+                employers managing compliance
               </div>
             </motion.div>
           </div>

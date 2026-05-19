@@ -44,12 +44,10 @@ export function Navbar() {
           <nav className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <a href="#" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-teal flex items-center justify-center">
-                <svg viewBox="0 0 24 24" className="w-5 h-5 text-foreground" fill="currentColor">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                </svg>
+              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+                <span className="text-lg font-bold text-primary-foreground">W</span>
               </div>
-              <span className="text-xl font-bold text-foreground">DataFlow</span>
+              <span className="text-xl font-bold text-foreground">WorkGuard</span>
             </a>
 
             {/* Desktop Navigation */}
