@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { Github, Twitter, Linkedin, Youtube } from "lucide-react"
 
 const footerLinks = {
@@ -32,11 +33,15 @@ export function Footer() {
               transition={{ duration: 0.5 }}
             >
               {/* Logo */}
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-primary-foreground flex items-center justify-center">
-                  <span className="text-lg font-bold text-primary">W</span>
-                </div>
-                <span className="text-xl font-bold">WorkGuard</span>
+              <div className="mb-4">
+                <Image
+                  src="/workguard-logo.png"
+                  alt="WorkGuard Logo"
+                  width={120}
+                  height={40}
+                  className="h-8 w-auto"
+                  priority
+                />
               </div>
               <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6 max-w-xs">
                 AI-powered workforce compliance management for foreign workers in Malaysia.

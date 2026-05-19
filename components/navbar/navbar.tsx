@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, ChevronDown } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -44,10 +45,14 @@ export function Navbar() {
           <nav className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <a href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-lg font-bold text-primary-foreground">W</span>
-              </div>
-              <span className="text-xl font-bold text-foreground">WorkGuard</span>
+              <Image
+                src="/workguard-logo.png"
+                alt="WorkGuard Logo"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+                priority
+              />
             </a>
 
             {/* Desktop Navigation */}
