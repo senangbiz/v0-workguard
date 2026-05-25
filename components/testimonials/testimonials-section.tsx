@@ -2,34 +2,32 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
+import Image from "next/image"
 import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    quote: "DataFlow transformed how we handle real-time analytics. What used to take weeks now takes hours.",
-    author: "Sarah Chen",
-    role: "CTO at TechScale",
-    avatar: "SC",
-    color: "bg-teal",
+    quote: "WorkGuard has made managing my permits and documents so easy. The notifications help me stay compliant.",
+    author: "Siti Nurhaliza",
+    role: "Domestic Helper, 5 years in Malaysia",
+    image: "/testimonial-helper-1.jpg",
   },
   {
-    quote: "The seamless integrations saved our engineering team countless hours. Incredible developer experience.",
-    author: "Marcus Rodriguez",
-    role: "Lead Engineer at Finovo",
-    avatar: "MR",
-    color: "bg-coral",
+    quote: "My employer uses WorkGuard to track all my documents. It gives me peace of mind knowing everything is organized.",
+    author: "Rajesh Kumar",
+    role: "Construction Worker, Nepal",
+    image: "/testimonial-helper-2.jpg",
   },
   {
-    quote: "Enterprise-grade security without the enterprise complexity. Exactly what we needed for compliance.",
-    author: "Emily Watson",
-    role: "VP Engineering at HealthTech",
-    avatar: "EW",
-    color: "bg-gold",
+    quote: "The platform helps my employer ensure I have everything properly documented. Communication with my employer is much clearer now.",
+    author: "Maria Santos",
+    role: "Domestic Helper, Philippines",
+    image: "/testimonial-helper-3.jpg",
   },
 ]
 
 const logos = [
-  "TechCorp", "InnovateLabs", "DataPro", "CloudSync", "AIVentures", "ScaleUp"
+  "Construction", "Hospitality", "Manufacturing", "Agriculture", "Domestic Care", "Services"
 ]
 
 export function TestimonialsSection() {
@@ -50,14 +48,14 @@ export function TestimonialsSection() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-muted text-muted-foreground text-sm font-medium mb-4">
-            Testimonials
+            Worker Testimonials
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
             Trusted by{" "}
-            <span className="text-teal">industry leaders</span>
+            <span className="text-primary">migrant workers</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            See what engineering teams are saying about their experience with DataFlow.
+            See what workers and employers are saying about WorkGuard's impact on compliance management.
           </p>
         </motion.div>
 
@@ -85,8 +83,14 @@ export function TestimonialsSection() {
 
               {/* Author */}
               <div className="flex items-center gap-3">
-                <div className={`w-10 h-10 rounded-full ${testimonial.color} flex items-center justify-center text-foreground text-sm font-medium`}>
-                  {testimonial.avatar}
+                <div className="w-12 h-12 rounded-full overflow-hidden bg-muted flex-shrink-0">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.author}
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <div className="font-medium text-foreground">{testimonial.author}</div>
@@ -105,7 +109,7 @@ export function TestimonialsSection() {
           className="text-center"
         >
           <p className="text-sm text-muted-foreground mb-8">
-            Powering data infrastructure for forward-thinking companies
+            Trusted by employers and workers across multiple industries
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
             {logos.map((logo, index) => (
