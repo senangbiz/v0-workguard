@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import Image from "next/image"
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
 import { IsometricScene } from "./isometric-scene"
 import { ArrowRight, Play } from "lucide-react"
@@ -221,31 +222,39 @@ export function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right content - Isometric Scene - 3 columns */}
+          {/* Right content - Worker Image - 3 columns */}
           <motion.div
             className="lg:col-span-3 relative"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="relative aspect-square max-w-[600px] mx-auto">
-              <IsometricScene />
+            <div className="relative aspect-square max-w-[600px] mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-primary/20">
+              <Image
+                src="/worker-banner.jpg"
+                alt="Team managing workforce compliance"
+                fill
+                className="object-cover"
+                priority
+              />
+              {/* Overlay gradient for visual depth */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent pointer-events-none" />
 
               {/* Magnetic Floating stat cards with parallax */}
               <FloatingStatCard
                 position="top-left"
-                label="Processing"
-                value="2.4M"
-                subtext="events/sec"
+                label="Active Workers"
+                value="1,500+"
+                subtext="managed seamlessly"
                 color="teal"
                 delay={1.5}
               />
 
               <FloatingStatCard
                 position="bottom-right"
-                label="Uptime"
-                value="99.99%"
-                subtext="guaranteed"
+                label="Compliance"
+                value="100%"
+                subtext="tracked automatically"
                 color="coral"
                 delay={1.8}
               />

@@ -37,9 +37,9 @@ export function Footer() {
                 <Image
                   src="/workguard-logo.png"
                   alt="WorkGuard Logo"
-                  width={120}
-                  height={40}
-                  className="h-8 w-auto"
+                  width={160}
+                  height={53}
+                  className="h-12 w-auto"
                   priority
                 />
               </div>
