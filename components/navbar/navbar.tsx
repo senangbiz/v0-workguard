@@ -8,8 +8,7 @@ import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  https://www.workguard.com.my/
-  
+  { label: "Home", href: "https://www.workguard.com.my" },
   { label: "Product", href: "/product" },
   { label: "Solutions", href: "/solutions" },
   { label: "Pricing", href: "/pricing" },
