@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description: 'Automate compliance management for foreign workers. WorkGuard streamlines permit tracking, document verification, and regulatory compliance for employers in Malaysia. Trusted by 500+ employers.',
   generator: 'v0.app',
   keywords: ['workforce compliance', 'foreign workers', 'permit tracking', 'compliance management', 'domestic helpers', 'migrant workers'],
+  icons: {
+    icon: '/favicon.png',
+  },
   openGraph: {
     title: 'WorkGuard | AI-Powered Workforce Compliance Platform',
     description: 'Automate compliance management for foreign workers in Malaysia. Track permits, documents, and compliance effortlessly.',
