@@ -14,19 +14,22 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'DataFlow | Real-Time Data Infrastructure for Modern Teams',
-  description: 'Process 2.4M+ events per second with 99.99% uptime. DataFlow is the unified platform for building, deploying, and scaling real-time data pipelines. Trusted by engineering teams at fast-growing companies worldwide.',
+  title: 'WorkGuard | AI-Powered Workforce Compliance Platform',
+  description: 'Automate compliance management for foreign workers. WorkGuard streamlines permit tracking, document verification, and regulatory compliance for employers in Malaysia. Trusted by 500+ employers.',
   generator: 'v0.app',
-  keywords: ['data infrastructure', 'real-time analytics', 'data pipelines', 'event streaming', 'data engineering'],
+  keywords: ['workforce compliance', 'foreign workers', 'permit tracking', 'compliance management', 'domestic helpers', 'migrant workers'],
+  icons: {
+    icon: '/favicon.png',
+  },
   openGraph: {
-    title: 'DataFlow | Real-Time Data Infrastructure',
-    description: 'Process millions of events per second. Build data pipelines in minutes, not months.',
+    title: 'WorkGuard | AI-Powered Workforce Compliance Platform',
+    description: 'Automate compliance management for foreign workers in Malaysia. Track permits, documents, and compliance effortlessly.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DataFlow | Real-Time Data Infrastructure',
-    description: 'Process millions of events per second. Build data pipelines in minutes, not months.',
+    title: 'WorkGuard | AI-Powered Workforce Compliance Platform',
+    description: 'Automate compliance management for foreign workers in Malaysia.',
   },
 }
 
@@ -36,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased`}>{children}</body>
     </html>
   )
