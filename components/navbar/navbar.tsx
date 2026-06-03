@@ -70,11 +70,23 @@ export function Navbar() {
 
             {/* Desktop CTAs */}
             <div className="hidden lg:flex items-center gap-4">
-              <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
-                Sign In
+              <Button
+                asChild
+                variant="ghost"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                <a href="https://app.workguard.com.my/login">
+                  Sign In
+                </a>
               </Button>
-              <Button className="bg-foreground text-background hover:bg-foreground/90">
-                Get Started
+
+              <Button
+                asChild
+                className="bg-foreground text-background hover:bg-foreground/90"
+              >
+                <a href="https://app.workguard.com.my/register">
+                  Get Started
+                </a>
               </Button>
             </div>
 
