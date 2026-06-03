@@ -196,8 +196,15 @@ export function PricingSection() {
           <p className="text-muted-foreground mb-4">
             Need more workers or custom features?
           </p>
-          <Button variant="outline" size="lg" className="bg-background">
-            Contact Our Sales Team
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="bg-background"
+          >
+            <a href="mailto:sales@workguard.com.my">
+              Contact Our Sales Team
+            </a>
           </Button>
         </motion.div>
       </div>
