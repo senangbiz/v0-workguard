@@ -173,13 +173,20 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <Button
-                size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 group px-8 shadow-lg shadow-primary/10 transition-all hover:shadow-xl hover:shadow-primary/15"
+             <Button
+              asChild
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 group px-8 shadow-lg shadow-primary/10 transition-all hover:shadow-xl hover:shadow-primary/15"
+            >
+              <a
+                href="https://app.workguard.com.my/register"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Get Started Free
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
+              </a>
+            </Button>
               <Button
                 size="lg"
                 variant="outline"
