@@ -75,7 +75,9 @@ export function Navbar() {
                 variant="ghost"
                 className="text-muted-foreground hover:text-foreground"
               >
-                <a href="https://app.workguard.com.my/login">
+                <a href="https://app.workguard.com.my/login"
+                target="_blank"
+                rel="noopener noreferrer">
                   Sign In
                 </a>
               </Button>
@@ -84,7 +86,9 @@ export function Navbar() {
                 asChild
                 className="bg-foreground text-background hover:bg-foreground/90"
               >
-                <a href="https://app.workguard.com.my/register">
+                <a href="https://app.workguard.com.my/register"
+                target="_blank"
+                rel="noopener noreferrer">
                   Get Started
                 </a>
               </Button>
