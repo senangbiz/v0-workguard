@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 
 import './globals.css'
+import { PetraChatbot } from '@/components/chatbot/petra-chatbot'
 
 const spaceGrotesk = Space_Grotesk({ 
   subsets: ['latin'],
@@ -40,7 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+        {children}
+        <PetraChatbot />
+      </body>
     </html>
   )
 }
