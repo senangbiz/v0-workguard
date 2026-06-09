@@ -7,21 +7,21 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    quote: "WorkGuard has made managing my permits and documents so easy. The notifications help me stay compliant.",
+    quote: "WorkGuard has transformed how we manage our foreign workforce. Permit renewals, document tracking, and compliance reminders are now effortless.",
     author: "Siti Nurhaliza",
-    role: "Domestic Helper, 5 years in Malaysia",
+    role: "HR Manager, Manufacturing Company",
     image: "/testimonial-helper-1.jpg",
   },
   {
-    quote: "My employer uses WorkGuard to track all my documents. It gives me peace of mind knowing everything is organized.",
+    quote: "Managing hundreds of workers used to require multiple spreadsheets. With WorkGuard, all worker records and permits are centralized in one platform.",
     author: "Rajesh Kumar",
-    role: "Construction Worker, Nepal",
+    role: "Operations Manager, Construction Firm",
     image: "/testimonial-helper-2.jpg",
   },
   {
-    quote: "The platform helps my employer ensure I have everything properly documented. Communication with my employer is much clearer now.",
-    author: "Maria Santos",
-    role: "Domestic Helper, Philippines",
+    quote: "The automated notifications help us stay ahead of permit expirations and compliance requirements. It has significantly reduced administrative work.",
+    author: "Lim Siew Jin",
+    role: "Director, Recruitment Agency",
     image: "/testimonial-helper-3.jpg",
   },
 ]
@@ -52,10 +52,10 @@ export function TestimonialsSection() {
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
             Trusted by{" "}
-            <span className="text-primary">migrant workers</span>
+            <span className="text-primary">Employers</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            See what workers and employers are saying about WorkGuard's impact on compliance management.
+            See what employers are saying about WorkGuard's impact on compliance management.
           </p>
         </motion.div>
 
