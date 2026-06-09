@@ -4,7 +4,11 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { VideoModal } from '@/components/video-modal'
 
-export function LandingVideoExperience() {
+interface LandingVideoExperienceProps {
+  onActiveChange?: (isActive: boolean) => void
+}
+
+export function LandingVideoExperience({ onActiveChange }: LandingVideoExperienceProps) {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
   const [showComingSoon, setShowComingSoon] = useState(false)
 
@@ -12,10 +16,11 @@ export function LandingVideoExperience() {
     // Show video after a brief delay to let page load
     const videoTimer = setTimeout(() => {
       setIsVideoOpen(true)
+      onActiveChange?.(true)
     }, 500)
     
     return () => clearTimeout(videoTimer)
-  }, [])
+  }, [onActiveChange])
 
   const handleVideoClose = () => {
     setIsVideoOpen(false)

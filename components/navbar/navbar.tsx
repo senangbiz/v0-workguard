@@ -16,7 +16,11 @@ const navLinks = [
   // { label: "Blog", href: "#" },
 ]
 
-export function Navbar() {
+interface NavbarProps {
+  isDisabled?: boolean
+}
+
+export function Navbar({ isDisabled = false }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -39,7 +43,8 @@ export function Navbar() {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           isScrolled
             ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm"
-            : "bg-transparent"
+            : "bg-transparent",
+          isDisabled && "pointer-events-none opacity-50"
         )}
       >
         <div className="container mx-auto px-6 lg:px-12">
