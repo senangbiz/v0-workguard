@@ -188,12 +188,19 @@ export function HeroSection() {
               </a>
             </Button>
               <Button
+                asChild
                 size="lg"
                 variant="outline"
                 className="border-border hover:bg-muted group bg-transparent transition-all hover:border-teal/30"
               >
-                <Play className="mr-2 h-4 w-4" />
-                Watch Demo
+                <a
+                  href="https://youtu.be/oeGP533hc0w"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Play className="mr-2 h-4 w-4" />
+                  Watch Video
+                </a>
               </Button>
             </motion.div>
 
