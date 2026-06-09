@@ -109,7 +109,7 @@ export function TestimonialsSection() {
           className="text-center"
         >
           <p className="text-sm text-muted-foreground mb-8">
-            Trusted by employers and workers across multiple industries
+            Trusted by employers across multiple service sectors
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
             {logos.map((logo, index) => (
