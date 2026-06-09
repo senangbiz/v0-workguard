@@ -1,11 +1,12 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
 import { IsometricScene } from "./isometric-scene"
 import { ArrowRight, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { VideoModal } from "@/components/video-modal"
 
 // Magnetic floating stat card with parallax
 function FloatingStatCard({
@@ -91,7 +92,15 @@ function FloatingStatCard({
 }
 
 export function HeroSection() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false)
+
   return (
+    <>
+      <VideoModal
+        videoUrl="https://www.youtube.com/watch?v=oeGP533hc0w"
+        isOpen={isVideoOpen}
+        onClose={() => setIsVideoOpen(false)}
+      />
     <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
       {/* Ultra-thin dotted grid with radial mask */}
       <div
@@ -188,19 +197,13 @@ export function HeroSection() {
               </a>
             </Button>
               <Button
-                asChild
                 size="lg"
                 variant="outline"
                 className="border-border hover:bg-muted group bg-transparent transition-all hover:border-teal/30"
+                onClick={() => setIsVideoOpen(true)}
               >
-                <a
-                  href="https://youtu.be/oeGP533hc0w"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Play className="mr-2 h-4 w-4" />
-                  Watch Video
-                </a>
+                <Play className="mr-2 h-4 w-4" />
+                Watch Video
               </Button>
             </motion.div>
 
@@ -280,5 +283,6 @@ export function HeroSection() {
       {/* Bottom gradient fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
+    </>
   )
 }
