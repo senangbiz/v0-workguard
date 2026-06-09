@@ -199,7 +199,7 @@ export function HeroSection() {
                   rel="noopener noreferrer"
                 >
                   <Play className="mr-2 h-4 w-4" />
-                  Watch Demo
+                  Watch Video
                 </a>
               </Button>
             </motion.div>
