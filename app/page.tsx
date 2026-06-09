@@ -5,10 +5,12 @@ import { PricingSection } from "@/components/pricing/pricing-section"
 import { TestimonialsSection } from "@/components/testimonials/testimonials-section"
 import { CTASection } from "@/components/cta/cta-section"
 import { Footer } from "@/components/footer/footer"
+import { LandingVideoExperience } from "@/components/landing-video-experience"
 
 export default function Home() {
   return (
     <main className="relative">
+      <LandingVideoExperience />
       <Navbar />
       <HeroSection />
       <FeatureSection />
