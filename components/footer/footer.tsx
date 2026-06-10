@@ -6,7 +6,7 @@ import { Github, Twitter, Linkedin, Youtube } from "lucide-react"
 
 const footerLinks = {
   Product: ["Features", "Pricing", "Integrations", "Changelog", "Documentation"],
-  Company: ["About", "Careers", "Press", "Partners"],
+  Company: ["About", "Blog", "Careers", "Press", "Partners"],
   Resources: ["Community", "Contact", "Support", "Status", "API Reference"],
   Legal: ["Privacy", "Terms", "Security", "Cookies"],
 }
