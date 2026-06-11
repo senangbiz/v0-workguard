@@ -60,7 +60,7 @@ export function LandingVideoExperience({ onActiveChange }: LandingVideoExperienc
             >
               {/* Text content */}
               <h2 className="text-5xl md:text-6xl font-bold text-white text-balance">
-                Something Interesting<br />Is Coming To You This July 2026
+                Something Interesting<br />Is Coming To You <br />This July 2026
               </h2>
 
               <p className="mt-6 text-lg text-gray-300">
