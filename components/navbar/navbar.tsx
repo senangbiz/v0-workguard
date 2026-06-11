@@ -13,6 +13,7 @@ const navLinks = [
   { label: "Solutions", href: "/solutions" },
   { label: "Pricing", href: "/pricing" },
   { label: "Docs", href: "/docs" },
+  // { label: "Blog", href: "#" },
 ]
 
 interface NavbarProps {
@@ -60,8 +61,8 @@ export function Navbar({ isDisabled = false }: NavbarProps) {
               />
             </a>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
+            {/* Desktop Navigation - Hidden Temporarily */}
+            {/* <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
@@ -71,7 +72,7 @@ export function Navbar({ isDisabled = false }: NavbarProps) {
                   {link.label}
                 </a>
               ))}
-            </div>
+            </div> */}
 
             {/* Desktop CTAs */}
             <div className="hidden lg:flex items-center gap-4">
@@ -122,7 +123,8 @@ export function Navbar({ isDisabled = false }: NavbarProps) {
             className="fixed inset-0 z-40 bg-background pt-20 lg:hidden"
           >
             <div className="container mx-auto px-6 py-8">
-              <nav className="flex flex-col gap-4">
+              {/* Navigation links hidden temporarily */}
+              {/* <nav className="flex flex-col gap-4">
                 {navLinks.map((link) => (
                   <a
                     key={link.label}
@@ -133,7 +135,7 @@ export function Navbar({ isDisabled = false }: NavbarProps) {
                     {link.label}
                   </a>
                 ))}
-              </nav>
+              </nav> */}
               <div className="flex flex-col gap-4 mt-8">
                 <Button variant="outline" className="w-full justify-center bg-transparent">
                   Sign In
