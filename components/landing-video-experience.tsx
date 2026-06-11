@@ -18,7 +18,7 @@ export function LandingVideoExperience({ onActiveChange }: LandingVideoExperienc
       setIsVideoOpen(true)
       onActiveChange?.(true)
     }, 500)
-    
+
     return () => clearTimeout(videoTimer)
   }, [onActiveChange])
 
@@ -49,7 +49,7 @@ export function LandingVideoExperience({ onActiveChange }: LandingVideoExperienc
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-black/100 flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black/95 flex items-center justify-center z-50"
           >
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
@@ -60,9 +60,9 @@ export function LandingVideoExperience({ onActiveChange }: LandingVideoExperienc
             >
               {/* Text content */}
               <h2 className="text-5xl md:text-6xl font-bold text-white text-balance">
-                Something Interesting<br />is Coming Soon
+                Something Interesting<br />is Coming Soon This July 2026
               </h2>
-              
+
               <p className="mt-6 text-lg text-gray-300">
                 Stay tuned for exciting updates
               </p>
